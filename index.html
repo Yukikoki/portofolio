@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yukiko | Spesialis Landing Page Kilat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tight text-blue-600">YukiPorto.</h1>
+
+            <div class="space-x-8 hidden md:flex font-medium text-sm items-center">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition">Layanan</a>
+                <a href="#work" class="hover:text-blue-600 transition">Portofolio</a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Mulai Proyek</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-slate-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-b border-slate-200 absolute w-full left-0 px-6 py-6 shadow-xl">
+            <div class="flex flex-col space-y-4 font-medium">
+                <a href="#home" class="mobile-link text-lg border-b border-slate-50 pb-2">Home</a>
+                <a href="#services" class="mobile-link text-lg border-b border-slate-50 pb-2">Layanan</a>
+                <a href="#work" class="mobile-link text-lg border-b border-slate-50 pb-2">Portofolio</a>
+                <a href="#contact" class="mobile-link bg-blue-600 text-white px-5 py-3 rounded-xl text-center">Mulai
+                    Proyek</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span
+                class="bg-blue-100 text-blue-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Tersedia
+                untuk Freelance</span>
+            <h2 class="text-4xl md:text-6xl font-bold mt-6 leading-tight">
+                Ubah Pengunjung Jadi Pembeli dengan <span class="text-blue-600">Landing Page Kilat.</span>
+            </h2>
+            <p class="text-slate-600 mt-6 text-lg max-w-2xl mx-auto">
+                Saya bantu bisnis Anda tampil profesional dengan website yang cepat, responsif, dan fokus pada konversi.
+                Selesai dalam 3-5 hari.
+            </p>
+            <div class="mt-10 flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:bg-blue-700 transition">Konsultasi
+                    Gratis</a>
+                <a href="#work"
+                    class="bg-white border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition">Lihat
+                    Portofolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold">Kenapa Pilih Jasa Saya?</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:border-blue-200 transition">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6">
+                        <i class="fas fa-bolt text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Performa Tinggi</h4>
+                    <p class="text-slate-600">Website ringan dengan optimasi kode maksimal agar loading di bawah 2
+                        detik.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:border-blue-200 transition">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6">
+                        <i class="fas fa-mobile-alt text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Mobile First</h4>
+                    <p class="text-slate-600">Tampilan sempurna di smartphone karena mayoritas pembeli Anda pakai HP.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:border-blue-200 transition">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6">
+                        <i class="fas fa-search text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">SEO Ready</h4>
+                    <p class="text-slate-600">Struktur HTML yang rapi agar lebih mudah ditemukan di Google.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-16">Proyek Terbaru</h3>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- RailExpress -->
+                <div class="group overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm">
+                    <div
+                        class="aspect-video bg-slate-200 flex items-center justify-center group-hover:scale-105 transition duration-500">
+                        <!-- Ganti dengan image preview proyekmu -->
+                        <span class="text-slate-400 font-medium"><img src="img/railexpress.png"></span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold">RailExpress Management</h4>
+                        <p class="text-slate-600 mt-2">Sistem manajemen tiket kereta dengan UI yang clean dan
+                            fungsional.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded">Tailwind CSS</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More Projects... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-20 bg-slate-900 text-white text-center px-6">
+        <h3 class="text-3xl font-bold mb-6">Siap Memulai Proyek Anda?</h3>
+        <p class="text-slate-400 mb-10">Jangan biarkan pengunjung Anda pergi karena website yang berantakan.</p>
+        <a href="https://wa.me/6282177400401?text=Halo%20Gan,%20saya%20mau%20tanya%20tentang%20jasa%20landing%20page-nya" 
+        target="_blank" 
+        class="bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-xl font-bold text-lg inline-flex items-center gap-2 transition">
+            <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+        </a>
+        <p class="mt-20 text-slate-500 text-sm">© 2026 Yukiko. Dibuat dengan Tailwind CSS.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Toggle menu saat tombol hamburger diklik
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Ganti icon ke 'X' saat terbuka
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Tutup menu otomatis saat salah satu link diklik
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+    </script>
+</body>
+
+</html>
